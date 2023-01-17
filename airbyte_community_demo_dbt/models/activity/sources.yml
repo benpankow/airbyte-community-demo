@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: slack_snowflake
+    database: ben
+    schema: slack
+    tables:
+      - name: channel_messages
+
+  - name: github_snowflake
+    database: ben
+    schema: github
+    tables:
+      - name: commits
+      - name: commits_author

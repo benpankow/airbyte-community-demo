@@ -1,0 +1,16 @@
+airbyte_demo_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: na94824.us-east-1
+
+      user: "{{ env_var('SNOWFLAKE_USER', '') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', '') }}"
+
+      role: "BEN"
+      database: "BEN"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', '') }}"
+      schema: "ACTIVITY"
+      threads: 1
+      client_session_keep_alive: False

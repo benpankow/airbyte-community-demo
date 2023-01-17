@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+airbyte_community_demo/assets/__pycache__/hex.cpython-38.py
+
+# builder.pex
+src/pex-builder/build
+
